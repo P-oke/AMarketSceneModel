@@ -1,0 +1,16 @@
+C:\Users\Hp\Desktop\TeamDGroupProject\bin\Debug\net5.0\TeamDGroupProject.exe
+C:\Users\Hp\Desktop\TeamDGroupProject\bin\Debug\net5.0\TeamDGroupProject.deps.json
+C:\Users\Hp\Desktop\TeamDGroupProject\bin\Debug\net5.0\TeamDGroupProject.runtimeconfig.json
+C:\Users\Hp\Desktop\TeamDGroupProject\bin\Debug\net5.0\TeamDGroupProject.runtimeconfig.dev.json
+C:\Users\Hp\Desktop\TeamDGroupProject\bin\Debug\net5.0\TeamDGroupProject.dll
+C:\Users\Hp\Desktop\TeamDGroupProject\bin\Debug\net5.0\ref\TeamDGroupProject.dll
+C:\Users\Hp\Desktop\TeamDGroupProject\bin\Debug\net5.0\TeamDGroupProject.pdb
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.csprojAssemblyReference.cache
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.AssemblyInfo.cs
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.dll
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\ref\TeamDGroupProject.dll
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.pdb
+C:\Users\Hp\Desktop\TeamDGroupProject\obj\Debug\net5.0\TeamDGroupProject.genruntimeconfig.cache

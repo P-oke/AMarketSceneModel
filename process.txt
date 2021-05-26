@@ -1,0 +1,33 @@
+//Market class
+who is going to the market and which market.
+// constructor to set the who and which market the buyer is going to.
+
+//commodities.
+A particular commoditiy.
+A list of different commodities.
+
+//Buyers
+--> fields
+a commodity
+a list of commodities
+a list of buyers.
+//methods
+A buyer buying a particular commoditiy from a particular seller
+A buyer buying different commodities from a particular seller
+A buyer buying different commodities from different sellers
+A list of buyers buying commodities.
+A Buyer/buyers paying their bill.
+
+//sellers
+-->fields
+commodity
+a list of commodities
+a list of seller class(private)
+--> constructor
+seller set price for commodity.
+//methods
+A seller selling a specific commodity e.g fish.
+A seller selling different commodities e.g fish, pepper, turkey.
+A list of seller selling a specific commodity. seller A and seller B, and so on... sells fish
+A list of sellers selling commodities e.g seller A, seller B.
+A seller using a paybill to the buyers(private)
