@@ -8,13 +8,14 @@ namespace TeamDGroupProject
 
         public Buyer()
         {
-            this.buyers = new string[] { "Buyer 1", };
+            this.buyers = new string[] { "Buyer 1", "Buyer 2" };
         }
 
         public void BuyersBuyingCommodities()
         {
             foreach (var buyer in buyers)
             {
+                Console.WriteLine("For Any Buyers in the Market, Each one of them can carry out the following purchasing activities with the Sellers in the Market\n");
                 Console.WriteLine($"{buyer} Can carry out the following Activities in the Market\n");
                 BuyASpecificCommodityFromASeller();
                 BuyDifferentCommoditiesFromASeller();

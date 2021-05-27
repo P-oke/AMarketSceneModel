@@ -16,8 +16,8 @@ namespace TeamDGroupProject
         {
             if (commodity.aSpecificCommodity != null)
             {
-                decimal result = IssueBill.BillForASpecificCommodity(commodity);
-                Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodity.aSpecificCommodity} to you at N{result}\n");
+                decimal Bill = IssueBill.BillForASpecificCommodity(commodity);
+                Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodity.aSpecificCommodity} to you at N{Bill}\n");
 
             }
             else
@@ -34,20 +34,20 @@ namespace TeamDGroupProject
             {
                 if (commodity == commodities.aSpecificCommodity)
                 {
-                    decimal result = IssueBill.BillForASpecificCommodity(commodities);
-                    Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodities.aSpecificCommodity} to you at N{result}");
+                    decimal Bill = IssueBill.BillForASpecificCommodity(commodities);
+                    Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodities.aSpecificCommodity} to you at N{ Bill}");
 
                 }
                 else if (commodity == "Beans")
                 {
-                    decimal result = IssueBill.BillForSecondCommodity(commodities);
-                    Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodity} to you at N{result}");
+                    decimal Bill = IssueBill.BillForSecondCommodity(commodities);
+                    Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodity} to you at N{ Bill}");
 
                 }
                 else if (commodity == "Yam")
                 {
-                    decimal result = IssueBill.BillForThirdCommodity(commodities);
-                    Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodity} to you at N{result}\n");
+                    decimal Bill = IssueBill.BillForThirdCommodity(commodities);
+                    Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodity} to you at N{Bill}\n");
 
                 }
                 else
@@ -64,20 +64,20 @@ namespace TeamDGroupProject
             {
                 if (seller == "Seller A")
                 {
-                    decimal result = IssueBill.BillForASpecificCommodity(commodity);
-                    Console.WriteLine($"{seller} has sold {commodity.aSpecificCommodity} to you at N{result}");
+                    decimal Bill = IssueBill.BillForASpecificCommodity(commodity);
+                    Console.WriteLine($"{seller} has sold {commodity.aSpecificCommodity} to you at N{Bill}");
 
                 }
                 else if (seller == "Seller B")
                 {
-                    decimal result = IssueBill.BillForASpecificCommodity(commodity);
-                    Console.WriteLine($"{seller} has sold {commodity.aSpecificCommodity} to you at N{result}");
+                    decimal Bill = IssueBill.BillForASpecificCommodity(commodity);
+                    Console.WriteLine($"{seller} has sold {commodity.aSpecificCommodity} to you at N{Bill}");
 
                 }
                 else if (seller == "Seller C")
                 {
-                    decimal result = IssueBill.BillForASpecificCommodity(commodity);
-                    Console.WriteLine($"{seller} has sold {commodity.aSpecificCommodity} to you at N{result}\n");
+                    decimal Bill = IssueBill.BillForASpecificCommodity(commodity);
+                    Console.WriteLine($"{seller} has sold {commodity.aSpecificCommodity} to you at N {Bill}\n");
 
                 }
                 else
@@ -85,7 +85,6 @@ namespace TeamDGroupProject
                     Console.WriteLine("You have not bought any commodity from Sellers of the specific commodity you want to buy in the Market");
                 }
             }
-
 
         }
 
@@ -95,34 +94,34 @@ namespace TeamDGroupProject
             {
                 if (commodities.aSpecificCommodity == commodities.availableCommodities[i])
                 {
-                    decimal aSpecificCommodity = IssueBill.BillForASpecificCommodity(commodities);
-                    decimal secondCommodity = IssueBill.BillForSecondCommodity(commodities);
-                    decimal thirdCommodity = IssueBill.BillForThirdCommodity(commodities);
+                    decimal aSpecificCommodityBill = IssueBill.BillForASpecificCommodity(commodities);
+                    decimal secondCommodityBill = IssueBill.BillForSecondCommodity(commodities);
+                    decimal thirdCommodityBill = IssueBill.BillForThirdCommodity(commodities);
 
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.aSpecificCommodity} to you at N{aSpecificCommodity}");
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[1]} to you at N{secondCommodity}");
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[2]} to you at N{thirdCommodity}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.aSpecificCommodity} to you at N{aSpecificCommodityBill}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[1]} to you at N{secondCommodityBill}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[2]} to you at N{thirdCommodityBill}");
                 }
                 else if (commodities.availableCommodities[i] == "Beans")
                 {
-                    decimal aSpecificCommodity = IssueBill.BillForASpecificCommodity(commodities);
-                    decimal secondCommodity = IssueBill.BillForSecondCommodity(commodities);
-                    decimal thirdCommodity = IssueBill.BillForThirdCommodity(commodities);
+                    decimal aSpecificCommodityBill = IssueBill.BillForASpecificCommodity(commodities);
+                    decimal secondCommodityBill = IssueBill.BillForSecondCommodity(commodities);
+                    decimal thirdCommodityBill = IssueBill.BillForThirdCommodity(commodities);
 
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[i]} to you at N{secondCommodity}");
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[0]} to you at N{aSpecificCommodity}");
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[2]} to you at N{thirdCommodity}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[i]} to you at N{secondCommodityBill}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[0]} to you at N{aSpecificCommodityBill}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[2]} to you at N{thirdCommodityBill}");
 
                 }
                 else if (commodities.availableCommodities[i] == "Yam")
                 {
-                    decimal aSpecificCommodity = IssueBill.BillForASpecificCommodity(commodities);
-                    decimal secondCommodity = IssueBill.BillForSecondCommodity(commodities);
-                    decimal thirdCommodity = IssueBill.BillForThirdCommodity(commodities);
+                    decimal aSpecificCommodityBill = IssueBill.BillForASpecificCommodity(commodities);
+                    decimal secondCommodityBill = IssueBill.BillForSecondCommodity(commodities);
+                    decimal thirdCommodityBill = IssueBill.BillForThirdCommodity(commodities);
 
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[i]} to you at N{thirdCommodity}");
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[0]} to you at N{aSpecificCommodity}");
-                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[1]} to you at N{secondCommodity}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[i]} to you at N{thirdCommodityBill}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[0]} to you at N{aSpecificCommodityBill}");
+                    Console.WriteLine($"{sellers.sellersInTheMarket[i]} has sold {commodities.availableCommodities[1]} to you at N{secondCommodityBill}\n");
 
                 }
                 else
@@ -132,39 +131,7 @@ namespace TeamDGroupProject
 
             }
 
-
         }
-
 
     }
 }
-
-// if (commodity.aSpecificCommodity != null)
-// {
-//     decimal result = IssueBill.Bill(commodity);
-//     Console.WriteLine(result);
-
-// }
-// else if (sellers.sellerCommodities.availableCommodities != null)
-// {
-//     decimal result = IssueBill.BillForSellersSellingSpecificCommodity(sellers);
-//     Console.WriteLine(result);
-// }
-// else
-// {
-//     //seller does not have the commodity.
-// }
-// }
-
-// for (int i = 0; i < sellers.Length; i++)
-// {
-//     if (sellers[i].sellerCommodities.aSpecificCommodity != null)
-//     {
-//         // this seller does not have the specific commodity.  
-//     }
-//     else
-//     {
-//         //calculate the price
-//     }
-
-// }
