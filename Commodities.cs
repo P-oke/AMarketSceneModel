@@ -4,7 +4,10 @@ namespace TeamDGroupProject
 {
     public class Commodities
     {
-        public double priceOfCommodity { get; private set; }
+        public double priceOfFirstCommodity { get; private set; }
+        public double priceOfSecondCommodity { get; private set; }
+        public double priceOfThirdCommodity { get; private set; }
+
 
         public string aSpecificCommodity { get; private set; }//egg
 
@@ -16,9 +19,12 @@ namespace TeamDGroupProject
             this.aSpecificCommodity = "Rice";
 
             Random random = new Random();
-            this.priceOfCommodity = Math.Round(100 * random.NextDouble(), 2);
+            this.priceOfFirstCommodity = Math.Round(100 * random.NextDouble(), 2);
+            this.priceOfSecondCommodity = Math.Round(100 * random.NextDouble(), 2);
+            this.priceOfThirdCommodity = Math.Round(100 * random.NextDouble(), 2);
 
             this.availableCommodities = new string[] { aSpecificCommodity, "Beans", "Yam" };
+
         }
 
     }

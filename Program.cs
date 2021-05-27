@@ -9,12 +9,7 @@ namespace TeamDGroupProject
             Market market = new Market();
             market.marketName = "Bariga Market";
             market.PrintMarketInfo();
-
-            Buyer buyer = new Buyer();
-            buyer.BuyASpecificCommodityFromASpecificSeller();
-            buyer.BuyDifferentCommoditiesFromASpecificSeller();
-            buyer.BuyASpecificCommodityFromDifferentSellers();
-            buyer.BuyDifferentCommoditiesFromDifferentSellers();
+            market.MarketScene();
 
         }
     }

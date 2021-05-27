@@ -8,9 +8,16 @@ namespace TeamDGroupProject
 
         public void PrintMarketInfo()
         {
-            Console.WriteLine($"Welcome to {marketName}\t{DateTime.Now}\n");
+            Console.WriteLine($"Welcome to {marketName} Buyers and Sellers, {DateTime.Now}\n");
+
+        }
+
+        public void MarketScene()
+        {
+            Buyer buyer = new Buyer();
+            buyer.BuyersBuyingCommodities();
 
         }
     }
-}
 
+}
