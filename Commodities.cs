@@ -9,9 +9,9 @@ namespace TeamDGroupProject
         public double priceOfThirdCommodity { get; private set; }
 
 
-        public string aSpecificCommodity { get; private set; }//egg
+        public string aSpecificCommodity { get; private set; }
 
-        public string[] availableCommodities { get; private set; }// an array of different commodities.
+        public string[] availableCommodities { get; private set; }
 
 
         public Commodities()

@@ -8,7 +8,7 @@ namespace TeamDGroupProject
 
         public void PrintMarketInfo()
         {
-            Console.WriteLine($"Welcome to {marketName} Buyers and Sellers, {DateTime.Now}\n");
+            Console.WriteLine($"Welcome to {marketName} Buyers, Shop Local, Eat Local, Spend Local and Enjoy Local :) {DateTime.Now}\n");
 
         }
 
