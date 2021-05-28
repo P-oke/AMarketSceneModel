@@ -101,28 +101,21 @@ namespace TeamDGroupProject
             decimal SellerAYam = IssueBill.BillForThirdCommodity(commodities);
 
 
-            decimal SellerBRice = IssueBill.BillForASpecificCommodity(commodities) + Convert.ToDecimal(.31);
-            decimal SellerBBeans = IssueBill.BillForSecondCommodity(commodities) + Convert.ToDecimal(.22);
-            decimal SellerBYam = IssueBill.BillForThirdCommodity(commodities) + Convert.ToDecimal(.13);
+            decimal SellerBRice = IssueBill.BillForASpecificCommodity(commodities) + Convert.ToDecimal(.4);
+            decimal SellerBBeans = IssueBill.BillForSecondCommodity(commodities) + Convert.ToDecimal(.5);
+            decimal SellerBYam = IssueBill.BillForThirdCommodity(commodities) + Convert.ToDecimal(.6);
 
-            decimal SellerCRice = IssueBill.BillForASpecificCommodity(commodities) + Convert.ToDecimal(1);
-            decimal SellerCBeans = IssueBill.BillForSecondCommodity(commodities) + Convert.ToDecimal(2);
-            decimal SellerCYam = IssueBill.BillForThirdCommodity(commodities) + Convert.ToDecimal(3);
+            decimal SellerCRice = IssueBill.BillForASpecificCommodity(commodities) + Convert.ToDecimal(.7);
+            decimal SellerCBeans = IssueBill.BillForSecondCommodity(commodities) + Convert.ToDecimal(.8);
+            decimal SellerCYam = IssueBill.BillForThirdCommodity(commodities) + Convert.ToDecimal(.9);
 
-            decimal[,] ArrayOfTotalPrices = new decimal[3, 3] { { SellerARice+SellerBBeans+SellerCYam, SellerABeans+SellerBYam+SellerCRice, SellerAYam+SellerBRice+SellerCBeans},
-                                                                  {SellerBRice+SellerCBeans+SellerAYam, SellerBBeans+SellerCYam+SellerARice, SellerBYam+SellerCRice+SellerABeans},
-                                                                  {SellerCRice+SellerABeans+SellerBYam, SellerCBeans+SellerAYam+SellerBRice, SellerCYam+SellerARice+SellerBBeans} };
+            decimal[] ArrayOfTotalPrices = new decimal[] { SellerARice + SellerBBeans + SellerCYam, SellerABeans + SellerBYam + SellerCRice, SellerAYam + SellerBRice + SellerCBeans };
 
 
-            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[0]} to you at N{SellerARice}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[1]} to you at N{SellerBBeans}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[2]} to you at N{SellerCYam}, Your Total Bill is: N{ArrayOfTotalPrices[0, 0]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[1]} to you at N{SellerABeans}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[2]} to you at N{SellerBYam}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[0]} to you at N{SellerCRice}, Your Total Bill is: N{ArrayOfTotalPrices[0, 1]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{SellerAYam}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[0]} to you at N{SellerBRice}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerCBeans}, Your Total Bill is: N{ArrayOfTotalPrices[0, 2]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[0]} to you at N{SellerBRice}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerCBeans}, and {sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{SellerAYam}, Your Total Bill is: N{ArrayOfTotalPrices[1, 0]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[1]} to you at N{SellerBBeans}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[2]} to you at N{SellerCYam}, and {sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[0]} to you at N{SellerARice}, Your Total Bill is: N{ArrayOfTotalPrices[1, 1]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[2]} to you at N{SellerBYam}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[0]} to you at N{SellerCRice}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerABeans}, Your Total Bill is: N{ArrayOfTotalPrices[1, 2]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[0]} to you at N{SellerCRice}, and {sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[1]} to you at N{SellerABeans}, and {sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{SellerBYam}, Your Total Bill is: N{ArrayOfTotalPrices[2, 0]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerCBeans}, and {sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{SellerAYam}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[0]} to you at N{SellerBRice}, Your Total Bill is: N{ArrayOfTotalPrices[2, 1]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[2]} to you at N{SellerCYam}, and {sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[0]} to you at N{SellerARice}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerBBeans}, Your Total Bill is: N{ArrayOfTotalPrices[2, 2]}\n");
+            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[0]} to you at N{SellerARice}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[1]} to you at N{SellerBBeans}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[2]} to you at N{SellerCYam}, Your Total Bill is: N{ArrayOfTotalPrices[0]}");
+            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[1]} to you at N{SellerABeans}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[2]} to you at N{SellerBYam}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[0]} to you at N{SellerCRice}, Your Total Bill is: N{ArrayOfTotalPrices[1]}");
+            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{SellerAYam}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[0]} to you at N{SellerBRice}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerCBeans}, Your Total Bill is: N{ArrayOfTotalPrices[2]}");
+
         }
 
     }
