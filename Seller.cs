@@ -50,8 +50,8 @@ namespace TeamDGroupProject
                 {
                     Console.WriteLine($"{sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{BillForYam} and {commodities.availableCommodities[0]} to you at N{BillForRice}, Your Total Bill is: N{BillForYam + BillForRice}");
 
-
                 }
+
                 else
                 {
                     Console.WriteLine($"You have not bought any available commodities from {sellersInTheMarket[0]} in the Market");
@@ -114,7 +114,7 @@ namespace TeamDGroupProject
 
             Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[0]} to you at N{SellerARice}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[1]} to you at N{SellerBBeans}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[2]} to you at N{SellerCYam}, Your Total Bill is: N{ArrayOfTotalPrices[0]}");
             Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[1]} to you at N{SellerABeans}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[2]} to you at N{SellerBYam}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[0]} to you at N{SellerCRice}, Your Total Bill is: N{ArrayOfTotalPrices[1]}");
-            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{SellerAYam}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[0]} to you at N{SellerBRice}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerCBeans}, Your Total Bill is: N{ArrayOfTotalPrices[2]}");
+            Console.WriteLine($"{sellers.sellersInTheMarket[0]} has sold {commodities.availableCommodities[2]} to you at N{SellerAYam}, and {sellers.sellersInTheMarket[1]} has sold {commodities.availableCommodities[0]} to you at N{SellerBRice}, and {sellers.sellersInTheMarket[2]} has sold {commodities.availableCommodities[1]} to you at N{SellerCBeans}, Your Total Bill is: N{ArrayOfTotalPrices[2]}\n");
 
         }
 
